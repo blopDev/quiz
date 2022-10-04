@@ -7,18 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div class="mt-20 container mx-auto text-center border-2 border-purple-400">
-        <h1 class="text-center text-3xl">Question 1</h1>
+    <div id="quiz-timer" class="text-3xl">
+        
     </div>
+    <div class="mt-20 container mx-auto text-center border-2 border-purple-400">
+        <h1 data-question class="text-center text-3xl">Question 1</h1>
+    </div>
+
     <div class="mt-20 sm:w-1/2 text-xl w-full container mx-auto text-center border-2 border-purple-400">
         <ul>
-            <li data-answer="1">A</li>
-            <li data-answer="2">A</li>
-            <li data-answer="3">A</li>
-            <li data-answer="4">A</li>
+            <li data-choice="1">A</li>
+            <li data-choice="2">A</li>
+            <li data-choice="3">A</li>
+            <li data-choice="4">A</li>
         </ul>
     </div>
     
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
