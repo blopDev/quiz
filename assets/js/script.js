@@ -37,6 +37,8 @@ const questions = [
   }
 ]
 
+let score;
+
 // eslint-disable-next-line no-extend-native
 Array.prototype.shuffle = function () {
   // Creates a method that can be accessed via protoype/_proto_ property from any array
@@ -61,7 +63,6 @@ const selectQuestion = () => {
   currentQuestion = []
   currentQuestion.push(questions[questions.length - 1])
   questions.pop()
-  console.log(questions)
 }
 
 const firstChoice = document.querySelector('li[data-choice="1"]')
@@ -81,22 +82,22 @@ const loadQuestions = () => {
   fourthChoice.textContent = currentQuestion[0].questionObj.choices.choice4
 }
 
-const checkQuestion = () => {
-
+const checkQuestion = (event) => {
+  if (event.target.textContent === currentQuestion[0].questionObj.answer) {
+    console.log(true)
+  } else {
+    console.log(false)
+  }
 }
 
 const ulEl = document.querySelector('ul')
 
-const pickChoice = (event) => {
-  ulEl.addEventListener('click', () => {
-    questionEl.value = 'answered'
-  })
-}
 
-const questionHandler = () => {
+
+const questionHandler = (event) => {
+  checkQuestion(event)
   loadQuestions()
-  checkQuestion()
-  pickChoice()
+  
 }
 
 const timerEl = document.querySelector('#quiz-timer')
@@ -116,7 +117,7 @@ const timerInt = setInterval(countDown, 1000)
 
 const startQuiz = () => {
   countDown()
-  questionHandler()
+  loadQuestions()
 }
 
 startQuiz()
