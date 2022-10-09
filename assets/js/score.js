@@ -16,9 +16,12 @@ const setHighscores = () => {
   // eslint-disable-next-line array-callback-return
   highscores = JSON.parse(localStorage.getItem('highscores')).sort((a, b) => {
     // eslint-disable-next-line no-unused-expressions
-    b.playerScore - a.playerScore;
+    return b.playerScore - a.playerScore;
   });
-  console.log(highscores);
+  highscores.splice(5, highscores.length);
+  const highscoreList = highscores;
+  localStorage.setItem('highscoreList', JSON.stringify(highscoreList));
+  location.assign('./leaderboard.html');
 };
 
 saveBtn.addEventListener('click', submitHandler);
