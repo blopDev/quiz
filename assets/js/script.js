@@ -1,42 +1,3 @@
-const questions = [
-  {
-    questionObj: {
-      question: 'Where are you?',
-      choices: {
-        choice1: 'Home',
-        choice2: 'Park',
-        choice3: 'Walmart',
-        choice4: 'Idk'
-      },
-      answer: 'Idk'
-    }
-  },
-  {
-    questionObj: {
-      question: 'What are you',
-      choices: {
-        choice1: 'Human',
-        choice2: 'Dog',
-        choice3: 'Cat',
-        choice4: 'Horse'
-      },
-      answer: 'Cat'
-    }
-  },
-  {
-    questionObj: {
-      question: 'How are you',
-      choices: {
-        choice1: 'Happy',
-        choice2: 'Sad',
-        choice3: 'Awesome',
-        choice4: 'Epic'
-      },
-      answer: 'Epic'
-    }
-  }
-];
-
 // eslint-disable-next-line no-extend-native
 Array.prototype.shuffle = function () {
   // Creates a method that can be accessed via protoype/_proto_ property from any array
@@ -53,6 +14,141 @@ Array.prototype.shuffle = function () {
   }
   return this;
 };
+
+const questions = [
+  {
+    questionObj: {
+      question: 'What artists recorded two of their bestselling albums while they were behind bars?',
+      choices: {
+        choice1: 'Tupac',
+        choice2: 'Ozzy Osbourne',
+        choice3: 'Johnny Cash',
+        choice4: '50 Cent'
+      },
+      answer: 'Johnny Cash'
+    }
+  },
+  {
+    questionObj: {
+      question: 'Michael Jackson debuted his trademark moonwalk during which song in 1983?',
+      choices: {
+        choice1: 'Smooth Criminal',
+        choice2: 'Billie Jean',
+        choice3: 'Beat It',
+        choice4: 'Thriller'
+      },
+      answer: 'Billie Jean'
+    }
+  },
+  {
+    questionObj: {
+      question: 'It took Mariah Carey 15 minutes to write which song in 1994?',
+      choices: {
+        choice1: 'Without You',
+        choice2: 'Fantasy',
+        choice3: 'Emotions',
+        choice4: 'All I want For Christmas Is You'
+      },
+      answer: 'All I Want For Christmas Is You'
+    }
+  },
+  {
+    questionObj: {
+      question: 'The most awarded female act of all time goes to… which 80s sensation?',
+      choices: {
+        choice1: 'Cyndi lauper',
+        choice2: 'Madonna',
+        choice3: 'Tina Turner',
+        choice4: 'Whitney Houston'
+      },
+      answer: 'Whitney Houston'
+    }
+  },
+  {
+    questionObj: {
+      question: 'The most awarded female act of all time goes to… which 80s sensation?',
+      choices: {
+        choice1: 'Cyndi lauper',
+        choice2: 'Madonna',
+        choice3: 'Tina Turner',
+        choice4: 'Whitney Houston'
+      },
+      answer: 'Whitney Houston'
+    }
+  },
+  {
+    questionObj: {
+      question: "What was Madonna's first Top 10 hit?",
+      choices: {
+        choice1: 'Like a Prayer',
+        choice2: 'Ray of Light',
+        choice3: 'Tina Turner',
+        choice4: 'Hung Up'
+      },
+      answer: 'Hung Up'
+    }
+  },
+  {
+    questionObj: {
+      question: 'Which DJ is known for throwing a caka at an audience memeber at every show?',
+      choices: {
+        choice1: 'Calvin Harris',
+        choice2: 'David Guetta',
+        choice3: 'Steve Aoki',
+        choice4: 'Skrillex'
+      },
+      answer: 'Steve Aoki'
+    }
+  },
+  {
+    questionObj: {
+      question: 'EDM grew in part as a revolt against which music trend?',
+      choices: {
+        choice1: 'Pop',
+        choice2: 'Punk',
+        choice3: 'Disco',
+        choice4: 'Jazz'
+      },
+      answer: 'Disco'
+    }
+  },
+  {
+    questionObj: {
+      question: "Which 2000s artist sings: 'What A Girl Wants'?",
+      choices: {
+        choice1: 'Christina Aguilera',
+        choice2: 'Carrie Underwood',
+        choice3: 'Kelly Clarkson',
+        choice4: 'Avril Lavigne'
+      },
+      answer: 'Kelly Clarkson'
+    }
+  },
+  {
+    questionObj: {
+      question: "What U.S. city is considered the 'Country Music Captail of the World'?",
+      choices: {
+        choice1: 'Nashville',
+        choice2: 'Dallas',
+        choice3: 'Lousville',
+        choice4: 'Denver'
+      },
+      answer: 'Nashville'
+    }
+  },
+  {
+    questionObj: {
+      question: 'What was the name of the band Justin Timberlake started in?',
+      choices: {
+        choice1: 'NSYNC',
+        choice2: 'Backstreet Boys',
+        choice3: '5ive',
+        choice4: '2gether'
+      },
+      answer: 'NSYNC'
+    }
+  }
+];
 
 let currentQuestion;
 
